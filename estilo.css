@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+body{
+    background-color: #ffb48a;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5d2417;
+    height: 70px;
+    flex-direction: column;
+}
+
+.funcoes a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.funcoes ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+  
+}
+.funcoes li{
+    margin: 0 10px;
+}
+.funcoes a:hover{
+    background-color: #5d2417;
+    color: black;
+}
+a{
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.receitas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+
+}
+.receita h2{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 15px; 
+}
+
+#hamburgue{
+    height: 300px;
+    border-radius: 10px;
+}
+
+#bife{
+    height: 300px;
+    border-radius: 10px;
+}
+
+#ovo{
+    height: 300px;
+    border-radius: 10px;
+}
