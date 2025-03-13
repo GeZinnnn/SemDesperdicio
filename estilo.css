@@ -7,16 +7,24 @@
 
 body{
     background-color: #ffb48a;
+    padding-top: 80px;
 }
 
 .container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #5d2417;
     height: 70px;
     flex-direction: column;
+    z-index: 1000;
+    font-size: 20px;
 }
+
 
 .funcoes a{
     display: flex;
@@ -24,22 +32,23 @@ body{
     text-align: center;
     align-items: center;
     margin-top: 10px;
-    transition: 0.5s;
+    transition: 0.3s;
+    border-radius: 8px;
 }
 
 .funcoes ul{
     display: flex;
     list-style: none;
     justify-content: center;
-    padding: 0;
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
   
 }
-.funcoes li{
-    margin: 0 10px;
-}
+
 .funcoes a:hover{
     background-color: #5d2417;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 a{
     color: black;
@@ -47,7 +56,6 @@ a{
     padding: 7px;
     margin: 20px;
     font-size: 20px;
-    border-radius: 10px;
 }
 
 .receitas{
@@ -80,4 +88,39 @@ a{
 #ovo{
     height: 300px;
     border-radius: 10px;
+}
+
+.receita{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.receitaButton{
+    background: #5d2417;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+
+}
+.receitaButton:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .receitas{
+        flex-direction: column;
+    }
+
+    .container{
+        font-size: 15px;
+        height: 50px;
+    }
 }
