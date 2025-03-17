@@ -157,4 +157,16 @@ img:hover {
         height: 250px;
         border-radius: 10px;
     }
+
+    footer{
+        padding: 13px;
+    }
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: #D72638;
+    padding: 15px;
+    margin-top: 17%;
 }
