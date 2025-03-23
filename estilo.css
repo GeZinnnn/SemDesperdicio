@@ -23,7 +23,9 @@ body{
     flex-direction: row;
     z-index: 1000;
     font-size: 20px;
+    gap: 38%;
 }
+
 
 
 .funcoes a{
@@ -93,7 +95,6 @@ body{
 }
 
 .receitaButton{
-    background: #5d2417;
     color: #333;
     font-size: 16px;
     font-weight: bold;
@@ -122,6 +123,40 @@ img:hover {
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
+footer{
+    text-align: center;
+    color: white;
+    background-color: #D72638;
+    padding: 15px;
+    margin-top: 17%;
+}
+
+#avaliacaotitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    margin: 10px;
+}
+
+.avaliacoes{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.avaliacoes ul{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    gap: 80px;
+    background-color: #FF6B35;
+}
+
+.avaliacoes a{
+    text-decoration: none;
+    
+}
 
 @media (max-width: 600px) {
 
@@ -161,12 +196,4 @@ img:hover {
     footer{
         padding: 13px;
     }
-}
-
-footer{
-    text-align: center;
-    color: white;
-    background-color: #D72638;
-    padding: 15px;
-    margin-top: 17%;
 }
