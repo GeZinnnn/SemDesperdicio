@@ -81,9 +81,12 @@ body{
     margin-bottom: 15px; 
 }
 
-.imgreceita{
-    height: 300px;
-    border-radius: 10px;
+.imgreceita {
+    width: 100%;  
+    max-width: 500px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 
@@ -158,22 +161,34 @@ footer{
     
 }
 
+@media (max-width: 480px) {
+    .imgreceita {
+        max-width: 300px; 
+    }
+    .receitas{
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 600px) {
 
     .container {
         height: 45px;
         font-size: 10px;
+        padding: 5px;
     }
     .receitas{
         flex-direction: column;
     }
 
-    .imgreceita{
-        height: 240px;
-        border-radius: 10px;
-    }
-
 }
+
+@media (max-width: 768px) {
+    .imgreceita {
+        max-width: 250px;
+    }
+}
+
 
 
 @media (max-width: 1024px) and (min-width: 601px) {
@@ -184,16 +199,11 @@ footer{
     .funcoes{
         flex-wrap: wrap;
     }
-    .receitas{
-        flex-wrap: wrap;
-    }
-
-    .imgreceita{
-        height: 250px;
-        border-radius: 10px;
-    }
-
     footer{
         padding: 13px;
+    }
+    
+    .imgreceita {
+        max-width: 400px;
     }
 }
