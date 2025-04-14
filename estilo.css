@@ -4,8 +4,20 @@
     box-sizing: border-box;
     font-family: Verdana;
 }
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+}
+
 
 body{
+    display: flex;
+    flex-direction: column;
     background-color: #FFF4E6;
     padding-top: 70px;
 }
@@ -82,8 +94,8 @@ body{
 }
 
 .imgreceita {
-    width: 100%;  
-    max-width: 500px; 
+    width: 100%;
+    max-width: 500px;
     height: auto; 
     display: block; 
     margin: 0 auto; 
@@ -127,11 +139,13 @@ img:hover {
 }
 
 footer{
+    display: flex;
     text-align: center;
     color: white;
     background-color: #D72638;
-    padding: 15px;
-    margin-top: 17%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 #avaliacaotitulo{
@@ -200,7 +214,7 @@ footer{
         flex-wrap: wrap;
     }
     footer{
-        padding: 13px;
+        height: 40px;
     }
     
     .imgreceita {
