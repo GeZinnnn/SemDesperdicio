@@ -33,7 +33,6 @@ body{
     background-color: #D72638;
     height: 70px;
     flex-direction: row;
-    z-index: 1000;
     font-size: 20px;
     gap: 38%;
 }

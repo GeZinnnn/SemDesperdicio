@@ -5,15 +5,23 @@
     font-family: Verdana;
 }
 
-img {
-    width: 100%;
-    max-width: 700px;
-    height: auto; 
-    display: block; 
-    margin: 0 auto; 
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF4E6;
+    padding-top: 70px;
 }
 
-.container {
+img {
+    
+    width: 80%;
+    max-width: 700px;
+    height: auto; 
+    margin: 0 auto; 
+
+}
+
+.container{
     position: fixed;
     top: 0;
     left: 0;
@@ -24,23 +32,19 @@ img {
     background-color: #D72638;
     height: 70px;
     flex-direction: row;
-    z-index: 1000;
     font-size: 20px;
     gap: 38%;
 }
 
-
-.grid-receita {
-    display: grid; 
-    grid-template-columns: 1fr 2fr; 
-    gap: 20px; 
-    padding: 20px;
+.imagem{
+    max-width: 80%;
 }
 
-
-.grid-receita img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+.corpo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3%;
+    
 }
 
