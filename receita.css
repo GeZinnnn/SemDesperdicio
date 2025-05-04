@@ -37,7 +37,7 @@ img {
     height: 70px;
     flex-direction: row;
     font-size: 20px;
-    gap: 38%;
+    z-index: 9999;
 }
 
 .imagem{

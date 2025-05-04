@@ -33,7 +33,7 @@ body{
     height: 70px;
     flex-direction: row;
     font-size: 15px;
-    gap: 38%;
+    z-index: 9999;
 }
 
 
