@@ -147,30 +147,39 @@ footer{
 }
 
 #avaliacaotitulo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333;
-    margin: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
 }
 
 .avaliacoes{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
+    background-color: #FF6B35;
+    min-height: 100px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .avaliacoes ul{
     display: flex;
-    text-align: center;
+    justify-content: center;
     flex-direction: row;
-    gap: 80px;
-    background-color: #FF6B35;
+    gap: 8%;
+    padding: 0;
+    list-style: none;
+
+}
+
+.avaliacoes li a:hover {
+    background-color: #a71f2a;
+    transform: scale(1.05);
 }
 
 .avaliacoes a{
     text-decoration: none;
-    
 }
 
 @media (max-width: 480px) {
@@ -215,7 +224,4 @@ footer{
         height: 40px;
     }
     
-    .imgreceita {
-        max-width: 400px;
-    }
 }
