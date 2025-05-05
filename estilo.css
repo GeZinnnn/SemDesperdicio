@@ -39,35 +39,30 @@ body{
 
 
 .funcoes a{
+    color: #ffffff;
+    background: #FF6B35;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-top: 10px;
+    text-decoration: none;
     transition: 0.3s;
     border-radius: 8px;
+    padding: 7px;
+    margin: 20px;
+    font-size: 20px;
 }
 
 .funcoes ul{
     display: flex;
     list-style: none;
     justify-content: center;
-    gap: 20px;
-    padding: 10px;
-    flex-wrap: wrap;
-  
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap; 
 }
 
 
-.funcoes a{
-    color: #ffffff;
-    background: #FF6B35;
-    text-decoration: none;
-    padding: 7px;
-    margin: 20px;
-    font-size: 20px;
-    transition: 0.3;
-}
 
 .funcoes a:hover{
     background-color: #D72638;
@@ -116,7 +111,7 @@ body{
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin: 10px;
+    margin-top: 20px;
     background: linear-gradient(45deg, #FF6B35, #D72638);
 
 }
