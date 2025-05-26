@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="icon/utensil_spoon_and_fork_cookware_icon_263264.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Sem Desperdicío</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/headerSemDesperdicio__1_-removebg-preview.png" alt="Logo Sem Desperdício">
+            <input type="text" placeholder="Procurar receitas">
+            <a href="#sobre">SOBRE</a>
+        </div>
+    </header>
+
+    <main>
+
+        <nav>
+            <div class="funcoes">
+                <ul>
+                    <li><a href="#cadastrar">Cadastrar receitas</a></li>
+                    <li><a href="#armazenamento">Dicas de armazenamento</a></li>
+                    <li><a href="javascript:void(0)" onclick="mostrarReceitas()">Lista de receitas</a></li>
+                </ul>
+            </div>
+        </nav>
+
+       <div id="receitasExistentes">
+            <div id="area-receitas-json">
+
+            </div>
+        </div>
+
+        <div class="receitas" >
+
+            <div class="receita">
+                <h2>Hamburguer</h2>
+                <img class="imgreceita" src="./assets/hamburgher/hamburgherExtraGrande1280x853.jpg"
+                alt="receita de hamburgue">
+                <button class="receitaButton" onclick="verReceita1()">Ver receita</button>
+            </div>
+
+            <div class="receita">
+                <h2>Bife grelhado</h2>
+                <img class="imgreceita" src="./assets/bife/bifeExtraGrande1280x853.jpg"
+                alt="receita de bife">
+                <button class="receitaButton" onclick="verReceita2()">Ver receita</button>
+            </div>
+
+            <div class="receita">
+                <h2>Ovo frito</h2>
+                <img class="imgreceita" src="./assets/ovo/ovoExtraGrande1280x853.jpg"
+                alt="ovo frito">
+                <button class="receitaButton" onclick="verReceita3()">Ver receita</button>
+            </div>
+            
+        </div>
+
+        <div class="avaliacoes">
+            <h2 id="avaliacaotitulo">avaliações</h2>
+            <ul>
+                <li>⭐️⭐️⭐️⭐️ – Maria</li>
+                <li>⭐️⭐️ – João</li>
+                <li>⭐️⭐️ – Pedro</li>
+                <li>⭐️⭐️⭐️ – Diego</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>© 2025 - Todos os direitos reservados</footer>
+
+    <script src="Js/scripts.js"></script>
+</body> 
+</html>

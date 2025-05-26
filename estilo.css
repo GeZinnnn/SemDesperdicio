@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+    margin-top: 70px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #EADBC8;
+    padding-top: 50px;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #34312f; 
+    height: 120px;
+    flex-direction: row;
+    z-index: 9999;
+    gap: 10%;
+}
+
+.container h1{
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+}
+
+.container img{
+    height: 80%;
+    width: 20%;
+}
+
+.container a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size:100%;
+}
+
+input[type="text"], textarea {
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 18px;
+    width: 50%;
+    height: 40%;
+    font-size: 16px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    background-color: #34312f;
+    color: #ffffff;
+}
+
+
+.funcoes a{
+    color: #ffffff;
+    background: #8B5E3C;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 3px;
+    padding: 7px;
+    margin: 20px;
+    font-size: 20px;
+    width: 300px;
+}
+
+.funcoes ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+
+
+.funcoes a:hover{
+    background-color: #764726;
+    transform: scale(1.1);
+    color: white;
+}
+
+.receitas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 100%;
+    background-color: #eeceb6;
+}
+.receita h2{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px; 
+}
+
+.imgreceita {
+    width: 100%;
+    max-width: 90%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+.receita{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.receitaButton{
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    background: linear-gradient(45deg, #D2691E, #8B5E3C);
+
+}
+.receitaButton:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.receitas img {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.receitas img:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    color: white;
+    background-color: #34312f;
+    padding: 17px 0; 
+    justify-content: center;
+    align-items: center;
+}
+
+#avaliacaotitulo{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.avaliacoes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #8B5E3C;
+    min-height: 70px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.avaliacoes ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8%;
+    padding: 0;
+    list-style: none;
+
+}
+
+.avaliacoes li a:hover {
+    background-color: #34312f;
+    transform: scale(1.05);
+}
+
+.avaliacoes a{
+    text-decoration: none;
+}
+
+#area-receitas-json {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+@media (max-width: 480px) {
+    .imgreceita {
+        max-width: 300px; 
+    }
+    .receitas{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        height: 70px;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .receitas{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .imgreceita {
+        max-width: 250px;
+    }
+}
+
+
+
+@media (max-width: 1024px) and (min-width: 601px) {
+    .container {
+        flex-wrap: wrap;
+        height: 90px;
+    }
+    .funcoes{
+        flex-wrap: wrap;
+    }
+    footer{
+        padding: 10px 0; 
+    }
+    
+}
