@@ -96,7 +96,7 @@ input[type="text"], textarea {
 
 .funcoes a:hover{
     background-color: #764726;
-    transform: scale(1.1);
+    transform: scale(1.2);
     color: white;
 }
 
