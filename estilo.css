@@ -35,7 +35,16 @@ body{
     height: 120px;
     flex-direction: row;
     z-index: 9999;
-    gap: 10%;
+    gap: 5%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 16px;
 }
 
 .container h1{
@@ -44,8 +53,9 @@ body{
 }
 
 .container img{
-    height: 80%;
+    height: auto;
     width: 20%;
+    min-width: 170px;
 }
 
 .container a{
@@ -221,14 +231,17 @@ footer{
 }
 
 
-
-
 @media (max-width: 480px) {
     .imgreceita {
         max-width: 300px; 
     }
     .receitas{
         flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 10px;
     }
 }
 
@@ -242,12 +255,22 @@ footer{
     .receitas{
         flex-direction: column;
     }
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 11px;
+    }
 
 }
 
 @media (max-width: 768px) {
     .imgreceita {
         max-width: 250px;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 13px;
     }
 }
 
@@ -264,5 +287,9 @@ footer{
     footer{
         padding: 10px 0; 
     }
-    
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 15px
+    }
 }
