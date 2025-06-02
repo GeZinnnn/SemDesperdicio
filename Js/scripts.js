@@ -1,13 +1,13 @@
 function verReceita1() {
-    window.location.href = "hamburguer.html"
+    window.location.href = "./receitas/hamburguer.html"
 }
 
 function verReceita2() {
-    window.location.href = "bife.html"
+    window.location.href = "./receitas/bife.html"
 }
 
 function verReceita3() {
-    window.location.href = "ovo.html"
+    window.location.href = "./receitas/ovo.html"
 }
 
 const jsonReceitas = `
