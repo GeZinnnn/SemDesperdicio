@@ -16,22 +16,27 @@
     <div class="cadastro">
         
        <div class = "titulo">
-            <h1>Login</h1>
+            <h1>Crie sua conta</h1>
              <p>Faça parte da nossa comunidade e ajude a reduzir o desperdício de alimentos!</p>
         </div>
 
-        <form id="form1">
+        <form action="http://localhost:4000/usuario" method="POST" id="form1">
         <label for="nome">Nome completo</label>
         <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
 
         <label for="senha">Senha</label>
         <input type="password" id="senha" name="senha" required />
 
-        <button type="button" onclick="entrar()">Entrar</button>
-        <p>Não tem uma conta <a href="cadastro.html">Cadastre-se</a></p>
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" name="cpf" maxlength="14" required />
+
+        <button type="submit">Criar conta</button>
+        <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
         </form>
     </div>
     
-    <script src="/Js/scripts.js"></script>
 </body>
 </html>

@@ -10,6 +10,11 @@ function verReceita3() {
     window.location.href = "./receitas/ovo.html"
 }
 
+//login
+function entrar(){
+    alert("Login realizado com sucesso!");
+}
+
 const jsonReceitas = `
 [
     {

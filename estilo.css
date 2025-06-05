@@ -45,6 +45,11 @@ body{
     flex-direction: row;
     gap: 20px;
     font-size: 16px;
+    flex-wrap: wrap;
+}
+
+.container a:hover{
+    color: #8B5E3C;
 }
 
 .container h1{

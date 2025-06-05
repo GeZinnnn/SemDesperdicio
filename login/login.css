@@ -50,9 +50,14 @@ body{
     gap: 10px;
 }
 
-.cadastro h2 {
+.cadastro h1 {
     margin-bottom: 20px;
     color: #34312f;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
 }
 
 form {
