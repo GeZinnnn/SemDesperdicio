@@ -1,3 +1,5 @@
+
+// Funções para navegação entre páginas
 function verReceita1() {
     window.location.href = "./receitas/hamburguer.html"
 }
@@ -10,11 +12,7 @@ function verReceita3() {
     window.location.href = "./receitas/ovo.html"
 }
 
-//login
-function entrar(){
-    alert("Login realizado com sucesso!");
-}
-
+//texto Json
 const jsonReceitas = `
 [
     {
@@ -32,8 +30,10 @@ const jsonReceitas = `
 ]
 `;
 
+//converte o JSON em um objeto JavaScript
 const receitas = JSON.parse(jsonReceitas);
 
+// Função para exibir as receitas na página
 function mostrarReceitas() {
     const area = document.getElementById("area-receitas-json");
     
